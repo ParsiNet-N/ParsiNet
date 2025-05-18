@@ -1,99 +1,116 @@
-{
-  "hasAdSources": false,
-  "adAutoPlayed": true,
-  "adBuffered": [],
-  "adCanPlay": false,
-  "adCurrentTime": 0,
-  "adDuration": 0,
-  "adLoading": true,
-  "adMuted": false,
-  "adPaused": true,
-  "adVolume": 1,
-  "airPlayAvailability": false,
-  "audioLanguage": [],
-  "autoPlayed": true,
-  "buffered": [
-    {
-      "start": 204,
-      "end": 570
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ParsiNet | فروش VPN ضد فیلتر</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  ],
-  "canPlay": true,
-  "canPlayThrough": true,
-  "containerSize": "xl",
-  "currentTime": 480.632672,
-  "duration": 686.56,
-  "ended": false,
-  "loading": false,
-  "muted": false,
-  "paused": false,
-  "qualities": [
-    {
-      "title": "خودکار (بر اساس سرعت اینترنت شما)",
-      "label": "auto",
-      "selected": false,
-      "active": false
-    },
-    {
-      "title": "144p",
-      "selected": false,
-      "active": false
-    },
-    {
-      "title": "240p",
-      "selected": false,
-      "active": false
-    },
-    {
-      "title": "360p",
-      "selected": false,
-      "active": false
-    },
-    {
-      "title": "480p",
-      "selected": false,
-      "active": false
-    },
-    {
-      "title": "720p",
-      "label": "HD",
-      "selected": false,
-      "active": false
-    },
-    {
-      "title": "1080p",
-      "label": "FHD",
-      "selected": true,
-      "active": true
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
     }
-  ],
-  "selectedSpeeds": "1x",
-  "streamTech": "hlsJs",
-  "subtitles": [],
-  "volume": 1,
-  "currentSource": "blob:https://app.filimo.school/aae2c864-405c-4e46-9cbb-0d19e4723723",
-  "castAvailable": true,
-  "isCasting": false,
-  "isFullscreen": true,
-  "isPictureInPicture": false,
-  "isAd": false,
-  "environment": {
-    "isMobile": false,
-    "isSafari": false,
-    "isIOS": false,
-    "isTV": false,
-    "isGameConsole": false,
-    "isFirefox": false,
-    "isFlashPlayer": false,
-    "isMac": false,
-    "isOpera": false,
-    "isSamsung": false,
-    "isVestelTV": false,
-    "isBot": false,
-    "isWebpSupported": true,
-    "browserVersion": "136",
-    "shouldPlayNative": false
-  },
-  "version": "0.0.86",
-  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
-}
+    h1 {
+      font-size: 3rem;
+      color: #ffcc00;
+    }
+    p.subtitle {
+      font-size: 1.3rem;
+      color: #ddd;
+      margin-top: -1rem;
+    }
+    .plans {
+      width: 90%;
+      max-width: 700px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem auto;
+    }
+    .plan {
+      background: #ffffff10;
+      border: 1px solid #ffffff30;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .plan:hover {
+      transform: scale(1.05);
+    }
+    .plan h3 {
+      color: #ffcc00;
+      margin-bottom: 0.5rem;
+    }
+    .pay {
+      margin-top: 0.5rem;
+      background: #ffcc00;
+      color: #000;
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      margin: 2rem 0;
+      font-size: 0.95rem;
+      text-align: center;
+      color: #bbb;
+    }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ParsiNet</h1>
+    <p class="subtitle">فروش VPN پرسرعت و ضد فیلتر</p>
+  </header>
+
+  <section class="plans">
+    <div class="plan"><h3>۱۰ گیگ - ۴۰,۰۰۰ تومان</h3><button class="pay" onclick="pay(40000)">پرداخت</button></div>
+    <div class="plan"><h3>۲۰ گیگ - ۵۵,۰۰۰ تومان</h3><button class="pay" onclick="pay(55000)">پرداخت</button></div>
+    <div class="plan"><h3>۳۰ گیگ - ۷۰,۰۰۰ تومان</h3><button class="pay" onclick="pay(70000)">پرداخت</button></div>
+    <div class="plan"><h3>۴۰ گیگ - ۱۱۰,۰۰۰ تومان</h3><button class="pay" onclick="pay(110000)">پرداخت</button></div>
+    <div class="plan"><h3>۵۰ گیگ - ۱۴۵,۰۰۰ تومان</h3><button class="pay" onclick="pay(145000)">پرداخت</button></div>
+    <div class="plan"><h3>۷۰ گیگ - ۱۹۰,۰۰۰ تومان</h3><button class="pay" onclick="pay(190000)">پرداخت</button></div>
+    <div class="plan"><h3>۱۰۰ گیگ - ۲۵۰,۰۰۰ تومان</h3><button class="pay" onclick="pay(250000)">پرداخت</button></div>
+  </section>
+
+  <footer>
+    پرداخت ایمن از طریق PayPing <br>
+    پشتیبانی: <a href="https://t.me/ParsiHelp">@ParsiHelp</a>
+  </footer>
+
+  <script>
+    function pay(amount) {
+      fetch("https://parsinet-server.onrender.com/pay", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.link) {
+          window.location.href = data.link;
+        } else {
+          alert("خطا در دریافت لینک پرداخت.");
+        }
+      })
+      .catch(() => alert("ارتباط با سرور برقرار نشد."));
+    }
+  </script>
+</body>
+</html>
